@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokes App</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <script src="./build/app/app.js"></script>
+</head>
+
+<body>
+    <main class="ct-main">
+        <h1>READY TO LAUGH?</h1>
+        <div id="ct-getJoke"></div>
+        <div class="ct-likes">
+            <button class="bt-likes" onclick=score(1)><img class="ico-likes" src="./assets/img/sad.svg" alt="sad face"></button>
+            <button class="bt-likes" onclick=score(2)><img class="ico-likes" src="./assets/img/notHappyNotSad.svg" alt="so so face"></button>
+            <button class="bt-likes" onclick=score(3)><img class="ico-likes" src="./assets/img/happy.svg" alt="happy face"></button>
+        </div>
+        <button class="bt-next" onclick=randomJokes()>Next</button>
+        <div id="ct-weather"></div>
+        <div class="ct-blob">
+            <svg class="img-blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#F1C21B" d="M54.9,-53.5C69.1,-40.7,77.1,-20.4,76.7,-0.4C76.4,19.6,67.6,39.2,53.4,54.6C39.2,70,19.6,81.2,-0.1,81.3C-19.8,81.4,-39.5,70.4,-56,55C-72.5,39.5,-85.7,19.8,-85.1,0.6C-84.5,-18.5,-70,-37,-53.5,-49.7C-37,-62.5,-18.5,-69.5,0.9,-70.4C20.4,-71.3,40.7,-66.2,54.9,-53.5Z" transform="translate(100 100)" />
+            </svg>
+        </div>
+    </main>
+</body>
+
+</html>
